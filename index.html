@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/507a686536.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div id="menu-bar">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <a href="#" class="logo"
+        ><span>M</span>y<span>D</span>ream<span>T</span>rip</a
+      >
+
+      <nav class="navbar">
+        <a href="#home" class="nav">Home</a>
+        <a href="#booking" class="nav">Bookings</a>
+        <a href="#Packages" class="nav">Packages</a>
+        <a href="#hotels" class="nav">Hotels</a>
+        <a href="#Services" class="nav">Services</a>
+        <a href="#review" class="nav">Review</a>
+        <a href="#contact" class="nav">Contact </a>
+      </nav>
+
+      <div id="icons">
+        <i class="fa-solid fa-magnifying-glass" id="searchBtn"></i>
+        <i class="fa-solid fa-user" id="Userbtn"></i>
+      </div>
+      <form action="" class="search-bar_container">
+        <input type="search" placeholder="Search here..." id="search-bar" />
+        <label
+          for="search_bar"
+          id="search-icon"
+          class="fa-solid fa-magnifying-glass"
+        ></label>
+      </form>
+    </header>
+
+    <div class="login-form" id="login-form">
+      <i class="fa-solid fa-xmark" id="Formcut"></i>
+      <form action="">
+        <h3>Login</h3>
+        <input
+          type="email"
+          class="box"
+          placeholder="Enter your email"
+          id="email"
+        />
+        <input
+          type="password"
+          placeholder="*********"
+          class="box"
+          id="password"
+        />
+        <input type="submit" value="Login" class="btn" />
+        <input type="checkbox" id="remember" />
+        <label for="remember" class="remember">remember me</label>
+        <p>forgot password? <a href="#">click here</a></p>
+        <p>don't have an account ? <a href="#">register now</a></p>
+      </form>
+    </div>
+
+    <section class="home" id="home">
+      <div class="content">
+        <h3>Adventure awaits, go find it</h3>
+        <p>Dream,Travel,Discover</p>
+        <a href="#" class="btn">Know More</a>
+      </div>
+      <div class="controls">
+        <span class="vid-btn active" data-src="vid1.mp4"></span>
+        <span class="vid-btn" data-src="vid2.mp4"></span>
+        <span class="vid-btn" data-src="vid3.mp4"></span>
+        <span class="vid-btn" data-src="vid4.mp4"></span>
+      </div>
+      <div class="video-container">
+        <video
+          src="vid1.mp4"
+          id="video-slider"
+          class="video"
+          loop
+          autoplay
+          muted
+        ></video>
+      </div>
+    </section>
+    <section class="book" id="booking">
+      <h1 class="heading">BOOK YOUR DREAM TRIP</h1>
+      <div class="row">
+        <div class="BYDTimage">
+          <img src="bookYourDreamTrip image.jpeg" alt="" class="Booking" />
+        </div>
+
+        <form action="" class="bookform">
+          <div class="inputBox">
+            <h3>Way to your Place</h3>
+            <label class="BYDT">Your name</label><br />
+            <input
+              type="text"
+              placeholder="Enter your name"
+              class="bookIn"
+            /><br />
+            <label class="BYDT">Email</label><br />
+
+            <input type="tel" class="bookIn" /><br />
+            <label class="BYDT">Destination </label><br />
+            <input type="text" class="bookIn" placeholder="place name" /><br />
+            <label class="BYDT">Date</label><br />
+            <input type="date" class="bookIn" /><br />
+            <input type="submit" class="bookIn" id="submit" /><br />
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Package section -->
+
+    <section id="Packages">
+      <h1 class="Packheading">PACKAGES</h1>
+      <div class="pack-container">
+        <div class="pack-box">
+          <img src="MumbaiImg1.jpg" alt="" class="pack1-img" />
+          <h1><i class="fa-solid fa-location-dot" id="location"></i>MUMBAI</h1>
+
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <div class="price">$100.00 <span>$150.00</span></div>
+          <br />
+
+          <a href="#" class="pack-btn">Book now</a><br /><br />
+        </div>
+        <p></p>
+
+        <div class="pack-box">
+          <img src="DubaiImg2.jpg" alt="" class="pack1-img" />
+          <h1><i class="fa-solid fa-location-dot" id="location"></i>DUBAI</h1>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <p></p>
+          <div class="price">$2000.00 <span>$2500.00</span></div>
+          <br />
+          <p></p>
+
+          <a href="#" class="pack-btn">Book now</a><br />
+        </div>
+        <div class="pack-box">
+          <img src="ParisImg3.jpg" alt="" class="pack1-img" />
+          <h1><i class="fa-solid fa-location-dot" id="location"></i>PARIS</h1>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <div class="price">$1000.00 <span>$1500.00</span></div>
+          <br />
+
+          <a href="#" class="pack-btn">Book now</a><br />
+        </div>
+        <div class="pack-box">
+          <img src="KeralaImg4.jpg" alt="" class="pack1-img" />
+          <h1><i class="fa-solid fa-location-dot" id="location"></i>KERALA</h1>
+
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+
+          <div class="price">$200.00 <span>$250.00</span></div>
+          <br />
+
+          <a href="#" class="pack-btn">Book now</a><br />
+          <p></p>
+        </div>
+        <div class="pack-box">
+          <img src="MalasiaImg5.webp" alt="" class="pack1-img" />
+          <h1>
+            <i class="fa-solid fa-location-dot" id="location"></i>MALAYSIA
+          </h1>
+
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <div class="price">$1500.00 <span>$1000.00</span></div>
+          <br />
+
+          <a href="#" class="pack-btn">Book now</a>
+          <p></p>
+        </div>
+        <div class="pack-box">
+          <img src="VeniceImg6.jpg" alt="" class="pack1-img" />
+          <h1><i class="fa-solid fa-location-dot" id="location"></i>VENICE</h1>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <div class="price">$1200.00 <span>$1800.00</span></div>
+          <br />
+
+          <a href="#" class="pack-btn">Book now</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hotel section -->
+    <section id="hotels">
+      <h1 class="Hotelheading">HOTELS</h1>
+      <p class="hotelContent">
+        All types of hotel are available which suits ones pocket.
+      </p>
+      <div class="hotel-container">
+        <div class="pack-box">
+          <img src="7StarHotel.jpg" alt="" class="pack1-img" />
+          <h2>7 Star Hotel</h2>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <div class="price">$100.00 <span>$150.00</span></div>
+          <br />
+        </div>
+        <p></p>
+
+        <div class="pack-box">
+          <img src="5StarHotel.jpg" alt="" class="pack1-img" />
+          <h2>5 Star Hotel</h2>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p></p>
+          <div class="price">$2000.00 <span>$2500.00</span></div>
+          <br />
+          <p></p>
+        </div>
+        <div class="pack-box">
+          <img src="7starHotel2.jpg" alt="" class="pack1-img" />
+          <h2>7 Star Hotel</h2>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <div class="price">$1000.00 <span>$1500.00</span></div>
+          <br />
+        </div>
+        <div class="pack-box">
+          <img src="3StarHotel.jpg" alt="" class="pack1-img" />
+          <h2>3 Star Hotel</h2>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+
+          <div class="price">$200.00 <span>$250.00</span></div>
+          <br />
+
+          <p></p>
+        </div>
+        <div class="pack-box">
+          <img src="5StarHotel2.jpg" alt="" class="pack1-img" />
+          <h2>5 Star Hotel</h2>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <div class="price">$1500.00 <span>$1000.00</span></div>
+          <br />
+
+          <p></p>
+        </div>
+        <div class="pack-box">
+          <img src="4StarHotel.jpg" alt="" class="pack1-img" />
+          <h2>4 Star Hotel</h2>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <div class="price">$1200.00 <span>$1800.00</span></div>
+          <br />
+        </div>
+      </div>
+    </section>
+    <!-- Service Section -->
+    <section id="Services">
+      <h1 class="Packheading">SERVICES</h1>
+      <div class="service-container">
+        <div class="service-box">
+          <i class="fa-solid fa-globe"></i>
+          <h3>All Around World</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur
+            error doloremque aperiam cum expedita quia sed fugiat totam.
+            Temporibus perspiciatis ut eum odit molestiae veniam sed mollitia
+            consectetur quisquam illum.
+          </p>
+        </div>
+        <div class="service-box">
+          <i class="fa-solid fa-utensils"></i>
+          <h3>All type Food</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur
+            error doloremque aperiam cum expedita quia sed fugiat totam.
+            Temporibus perspiciatis ut eum odit molestiae veniam sed mollitia
+            consectetur quisquam illum.
+          </p>
+        </div>
+        <div class="service-box">
+          <i class="fa-solid fa-hotel"></i>
+          <h3>Hotels</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur
+            error doloremque aperiam cum expedita quia sed fugiat totam.
+            Temporibus perspiciatis ut eum odit molestiae veniam sed mollitia
+            consectetur quisquam illum.
+          </p>
+        </div>
+
+        <div class="service-box">
+          <i class="fa-solid fa-person-hiking"></i>
+          <h3>Adventures</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur
+            error doloremque aperiam cum expedita quia sed fugiat totam.
+            Temporibus perspiciatis ut eum odit molestiae veniam sed mollitia
+            consectetur quisquam illum.
+          </p>
+        </div>
+        <div class="service-box">
+          <i class="fa-solid fa-bullhorn"></i>
+          <h3>Safe Journey</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur
+            error doloremque aperiam cum expedita quia sed fugiat totam.
+            Temporibus perspiciatis ut eum odit molestiae veniam sed mollitia
+            consectetur quisquam illum.
+          </p>
+        </div>
+        <div class="service-box">
+          <i class="fa-solid fa-plane"></i>
+          <h3>Fast Travel</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur
+            error doloremque aperiam cum expedita quia sed fugiat totam.
+            Temporibus perspiciatis ut eum odit molestiae veniam sed mollitia
+            consectetur quisquam illum.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="review">
+      <h1 class="Packheading">Review</h1>
+
+      <div class="review-container">
+        <div class="review-box">
+          <img src="reviewImg1.jpg" />
+          <h3>Ankita Shah</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium
+            accusantium eligendi quaerat sequi, itaque officiis vitae animi ea
+            sunt.
+          </p>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+
+        <div class="review-box">
+          <img src="reviewimg2.jpg" />
+          <h3>John Leo</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudporis
+            esse in illo molestiae assumenda perferendis sequi, itaque officiis
+            vitae animi ea sunt.
+          </p>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+        </div>
+
+        <div class="review-box">
+          <img src="reviewimg3.jpg" />
+          <h3>Manish Kapoor</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium
+            accusantium eligendstiae assumenda perferendis sequi, itaque
+            officiis vitae animi ea sunt.
+          </p>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+        </div>
+
+        <div class="review-box">
+          <img src="reviewImg4.jpeg" />
+          <h3>Ana Stoinis</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium
+            accusantium eligendierendis sequi, itaque officiis vitae animi ea
+            sunt.
+          </p>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <script src="script.js"></script>
+  </body>
+</html>

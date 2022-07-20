@@ -1,0 +1,624 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,300&display=swap");
+
+::root {
+  --orange: #ffa500;
+}
+
+::selection {
+  background: var(--orange);
+  color: #fff;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 6rem;
+  scroll-behavior: smooth;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+}
+
+section {
+  padding: 2rem 9%;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #333;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 9%;
+}
+
+/* Logo */
+.logo {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+span {
+  color: #ffa500;
+  font-size: 3rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+/* Navigation  */
+.nav {
+  color: #fff;
+  font-size: 1.8rem;
+  margin: 0.8rem;
+}
+.nav:hover {
+  color: #ffa500;
+  cursor: pointer;
+}
+
+i {
+  color: #fff;
+  margin: 1rem;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+i:hover {
+  color: #ffa500;
+  cursor: pointer;
+}
+
+/* Search bar */
+
+.search-bar_container {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  padding: 1.5rem 2rem;
+  background: #333;
+  border: 0.1rem solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  z-index: 1001;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+header .search-bar_container.active {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+#search-bar {
+  width: 95%;
+  padding: 1rem;
+  font-size: 1.7rem;
+  text-transform: none;
+  color: #333;
+}
+#search-icon {
+  color: #fff;
+  padding: 20px;
+  font-size: 2.5rem;
+}
+#search-icon:hover {
+  color: #ffa500;
+  cursor: pointer;
+}
+/* Login-form container */
+
+.login-form {
+  position: fixed;
+  top: -120%;
+  right: 0;
+  left: 0;
+  z-index: 10000;
+  min-height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login-form.active {
+  position: fixed;
+  top: 0%;
+  right: 0;
+  left: 0;
+  z-index: 10000;
+  min-height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login-form form {
+  margin: 2rem;
+  padding: 1.5rem 2rem;
+  border-radius: 0.5rem;
+  background: #fff;
+  width: 50rem;
+}
+
+.login-form form h3 {
+  font-size: 3rem;
+  font-weight: bolder;
+  color: #ffa500;
+  text-align: center;
+  margin-bottom: 3px;
+}
+
+.login-form form .box {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.7rem;
+  color: #333;
+  margin: 0.8rem 0;
+  border: 0.2rem solid black;
+}
+
+.login-form form .btn {
+  background: #ffa500;
+  color: #fff;
+  font-size: 2rem;
+  padding: 0.8rem;
+  width: 10rem;
+  border: 0.08rem solid #ffa500;
+  margin: auto 4rem;
+  border-radius: 0.9rem;
+  width: 80%;
+}
+.login-form form .btn:hover {
+  background: rgb(241, 136, 8);
+
+  cursor: pointer;
+}
+.login-form form .remember {
+  font-size: 2rem;
+  margin: 0.5rem 0.2rem;
+}
+
+.login-form form p {
+  font-size: 2rem;
+  margin: 0.8rem;
+  padding: 0.8rem;
+}
+.login-form form p a:hover {
+  color: #ffa500;
+}
+#Formcut {
+  position: absolute;
+  color: #fff;
+  top: 3rem;
+  right: 3rem;
+  font-size: 5rem;
+}
+#Formcut:hover {
+  color: #ffa500;
+  cursor: pointer;
+}
+
+#menu-bar {
+  display: none;
+}
+#menu-bar:hover {
+  cursor: pointer;
+}
+
+section {
+  padding: 2rem 9%;
+}
+
+.home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  position: relative;
+  z-index: 0;
+}
+.content {
+  text-align: center;
+}
+
+.home .content h3 {
+  font-size: 4.5rem;
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: 0.3rem 0.5rem rgba(0, 0, 0, 0.1);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.home .content p {
+  font-size: 2.5rem;
+  color: #fff;
+  padding: 0.5rem 0;
+  margin-bottom: 2rem;
+  font-family: cursive;
+}
+.btn {
+  background: #ffa500;
+  color: #fff;
+  font-size: 2rem;
+  padding: 0.8rem;
+  width: 10rem;
+  border: 0.08rem solid #ffa500;
+  margin: auto 4rem;
+  border-radius: 0.9rem;
+  width: 80%;
+}
+
+.btn:hover {
+  background: rgb(226, 168, 20);
+}
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.controls {
+  padding: 1rem;
+  border-radius: 5rem;
+  background: rgba(0, 0, 0, 0.7);
+  position: relative;
+  top: 8rem;
+}
+.vid-btn {
+  height: 2rem;
+  width: 2rem;
+  display: inline-block;
+  border-radius: 50%;
+  cursor: pointer;
+  background: #fff;
+  margin: 0.5rem;
+}
+.home .controls .vid-btn.active {
+  background: #ffa500;
+}
+
+/* BOOk Section */
+.heading {
+  text-align: center;
+  font-size: 3rem;
+  padding: 2.5rem 0;
+  color: #333;
+  font-weight: bolder;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.BYDTimage {
+  flex: 1 1 60rem;
+}
+.bookform {
+  flex: 1 1 50rem;
+  padding: 3rem 5rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  
+}
+img {
+  width: 100%;
+}
+.BYDT {
+  padding: 0.6rem;
+  margin: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 2rem;
+}
+.bookIn {
+  padding: 0.2rem;
+  margin: 0.5rem;
+  font-size: 1.5rem;
+  border: 0.1rem solid rgb(121, 117, 117);
+  border-radius: .3rem;
+  width:50%;
+}
+#submit {
+  background: #ffa500;
+  padding: 0.8rem;
+  text-align: center;
+  border-radius: 0.7rem;
+  color: #fff;
+  margin-left: 8rem;
+  margin-top: 2rem;
+  font-size: 2.5rem;
+}
+#submit:hover {
+  background: #9b690e;
+  cursor: pointer;
+}
+
+.inputBox h3 {
+  text-align: center;
+  font-size: 3rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: #ffa500;
+  margin: 2rem;
+}
+/* packages */
+.Packheading {
+  text-align: center;
+  font-size: 3rem;
+  padding: 2.5rem 0;
+  color: #333;
+  font-weight: bolder;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.stars i {
+  color: #ffa500;
+  margin: auto 0;
+  font-size: 1rem;
+}
+.pack-container h1 i {
+  color: black;
+}
+.pack-container p {
+  color: black;
+  font-size: 2rem;
+}
+.price span {
+  color: black;
+  font-size: 1.5rem;
+  margin: 0.5rem;
+  text-decoration: line-through;
+}
+.price {
+  font-size: 3rem;
+}
+.pack-box a {
+  background: #ffa500;
+  color: #fff;
+  padding: 1rem;
+  margin: 2rem;
+  margin-bottom: 5rem;
+  font-size: 2rem;
+  border-radius: 1rem;
+}
+
+.pack-box a:hover {
+  background: rgb(226, 168, 20);
+}
+/* .pack-box a{
+  margin:2rem;
+  padding:1rem;
+
+} */
+.pack-container {
+  display: flex;
+  flex-flow: wrap;
+  gap: 1.8rem;
+}
+.pack-box {
+  flex: 1 1 30rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  padding-bottom: 2rem;
+  padding: 0.2rem;
+  height: 45rem;
+}
+.pack-box:hover {
+  flex: 1 1 31rem;
+  
+}
+.pack-box img {
+  height: 28rem;
+  width: 100%;
+  object-fit: cover;
+}
+/* Hotel section */
+.Hotelheading {
+  text-align: center;
+  font-size: 3rem;
+  padding: 2.5rem 0;
+  color: #333;
+  font-weight: bolder;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hotel-container {
+  display: flex;
+  flex-flow: wrap;
+  gap: 1.8rem;
+}
+
+/* .hotel-container .pack-box {
+  top: -100;left:0;
+  height: 100%;
+  width:100%;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  padding: 2rem;
+  padding-top: 5rem;
+
+} */
+
+/* .hotel-container .pack-box:hover {
+  top: 0;left:0;
+  height: 100%;
+  width:100%;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  padding: 2rem;
+  padding-top: 5rem;
+
+} */
+
+
+.hotelContent{
+  font-size: 3rem;
+  text-align: center;
+  margin: 1rem;
+}
+.stars i {
+  color: #ffa500;
+  margin: auto 0;
+  font-size: 1rem;
+}
+.hotel-container h1 i {
+  color: black;
+}
+
+
+/* Service Container */
+.service-box i {
+  color: #ffa500;
+  font-size: 8rem;
+  padding: 1rem;
+
+}
+.service-box h3{
+  font-size:2rem;
+  color:#333;
+}
+.service-box p{
+  font-size: 1.2rem;
+  color:rgb(112, 69, 17);
+}
+
+.service-container{
+  display:flex;
+  flex-wrap:wrap;
+  gap:1.5rem;
+}
+.service-box{
+  flex:1 1 40rem;
+  border-radius: .5rem;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+
+}
+.service-box:hover{
+  background: rgb(243, 231, 210);
+  flex:1 1 41.3rem;
+
+
+}
+/* Review Section */
+
+.review-box{
+  flex:1 1 30rem;
+  border-radius: .5rem;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+
+}
+.review-box img{
+  height:13rem;
+  width:13rem;
+  border-radius:50% ;
+  object-fit:cover ;
+  margin-bottom: 1rem;
+}
+.review-slider{
+  padding-bottom: 2rem;
+}
+
+.review-container{
+  display:flex;
+  flex-wrap: wrap;
+  gap:1.5rem;
+}
+
+/* Contact Section */
+.contact-box{
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+padding: 4rem;
+font-size: 2rem;
+display: flex;
+
+
+}
+.con-input{
+  border:.1rem solid black;
+  border-radius: .2rem;
+  padding:1rem;
+  margin:1rem;
+}
+.inline{
+flex-flow: 1 1 50;
+flex-wrap: wrap;
+}
+.name{
+  display: inline;
+}
+
+.contact-box i{
+  color:black;
+}
+.contact-box li{
+  display: inline-block;
+  padding-top: 3rem;
+}
+
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 991px) {
+  header {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #menu-bar {
+    display: initial;
+  }
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #333;
+    border-top: 0.1rem solid rgba(255, 255, 255, 0.2);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  header .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  .navbar a {
+    display: block;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    margin: 1.5rem 0rem;
+    background: #222;
+  }
+  .nav:hover {
+    color: #ffa500;
+    cursor: pointer;
+  }
+}
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+}
