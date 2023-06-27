@@ -544,37 +544,132 @@ img {
   flex-wrap: wrap;
   gap:1.5rem;
 }
+#contact{
+  width:100%;
+  margin: 0;
+  text-align: center;
+  
+  
+}
+.head{
+  font-size: 4rem;
+  margin-bottom: 10px;
+}
+.contact
+{
+  width:100%;
+  max-width: 1400px;
+  display:flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  background-color:#ffa500;
+ 
+  margin-right: -100px;
+}
 
-/* Contact Section */
-.contact-box{
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
-padding: 4rem;
-font-size: 2rem;
-display: flex;
+.right{
+  width:50%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 60px;
+  margin-left: -1000px;
+  background-color:transparent;
+  text-align: center;
+  
 
 
 }
-.con-input{
-  border:.1rem solid black;
-  border-radius: .2rem;
-  padding:1rem;
-  margin:1rem;
-}
-.inline{
-flex-flow: 1 1 50;
-flex-wrap: wrap;
-}
-.name{
-  display: inline;
+
+.left{
+  width:62%;
+  background-color:#333;
+  padding:40px;
 }
 
-.contact-box i{
+.left h1{
+ color:#fff;
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.left input{
+  width:500px;
+  height: 50px;
+  margin: 25px;
+  border-radius: 5px;
+  padding: 10px;
   color:black;
 }
-.contact-box li{
-  display: inline-block;
-  padding-top: 3rem;
+
+.left input:hover{
+  width:505px;
+  height: 52px;
+  margin: 25px;
+  border-radius: 5px;
+  padding: 10px;
+  color:black;
 }
+
+.left textarea{
+  width:500px;
+  height: 120px;
+  margin: 25px;
+  border-radius: 5px;
+  padding: 10px;
+  color:black;
+}
+#con-sub{
+  width:100px;
+  text-align: center;
+  background-color: #ffa500;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  margin-left: 100px;
+}
+#con-sub:hover{
+  cursor: pointer;
+}
+
+
+
+
+.con-box{
+  background-color: white;
+  width: 200px;
+  height: 150px;
+  margin: 25px;
+  padding:20px;
+  text-align: center;
+  align-items: center;
+  
+}
+
+.con-box:hover{
+  background-color: white;
+  width: 202px;
+  height: 153px;
+  margin: 25px;
+  padding:20px;
+  text-align: center;
+  align-items: center;
+  
+}
+
+.con-box h3{
+color:black
+}
+
+.con-box i{
+  color:#ffa500;
+  font-size: 4rem;
+  margin-bottom: 5px;
+  
+}
+
+
+
 
 
 @media (max-width: 1200px) {
@@ -622,3 +717,5 @@ flex-wrap: wrap;
     font-size: 50%;
   }
 }
+
+
